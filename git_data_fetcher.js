@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "Tasin5541",
+  githubUserName: "Andres8ezau",
 };
 
 const fetch = require("node-fetch");
@@ -100,8 +100,8 @@ const query_org = {
 //isFork,
 const query_pinned_projects = {
   query: `
-	query { 
-	  user(login: "${openSource.githubUserName}") { 
+	query {
+	  user(login: "${openSource.githubUserName}") {
 	    pinnedItems(first: 6, types: REPOSITORY) {
 	      totalCount
 	      nodes{
